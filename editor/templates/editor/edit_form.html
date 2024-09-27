@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit XML File</title>
+</head>
+<body>
+    <h1>Edit XML File</h1>
+    <form method="POST" action="{% url 'download_xml' %}">
+        {% csrf_token %}
+        {% for key, value in xml_data.items %}
+            <label for="{{ key }}">{{ key }}:</label>
+            <input type="text" name="{{ key }}" id="{{ key }}" value="{{ value }}">
+            <br>
+        {% endfor %}
+        <button type="submit">Download Updated XML</button>
+    </form>
+</body>
+</html>

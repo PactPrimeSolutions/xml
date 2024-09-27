@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settlement>
+    <client>
+        <name>John Doe</name>
+        <age>30</age>
+        <email>johndoe@example.com</email>
+    </client>
+    <property>
+        <address>123 Elm Street</address>
+        <city>Springfield</city>
+        <state>IL</state>
+        <zip>62701</zip>
+    </property>
+    <settlementDetails>
+        <amount>25000</amount>
+        <date>2024-09-26</date>
+    </settlementDetails>
+</settlement>
